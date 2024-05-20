@@ -1,3 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+#content {
+  margin:auto;
+  width: 20%;
+  padding: 30px;
+  border: 1px solid black;
+}
+button {
+  font-size: 20px;
+  font-weight: bold;
+}
