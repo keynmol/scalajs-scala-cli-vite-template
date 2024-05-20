@@ -1,0 +1,23 @@
+{
+  "name": "scalajs-talk-at-imperial",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watchScalajs": "scala-cli package . -w -f -o scalajs-frontend.js --js-module-kind es",
+    "buildScalajs": "scala-cli package . -f -o scalajs-frontend.js --js-module-kind es",
+    "buildScalajsRelease": "scala-cli package . -f -o scalajs-frontend.js --js-mode release --js-module-kind es"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "echarts": "^5.5.0"
+  }
+}
