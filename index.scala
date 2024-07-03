@@ -8,13 +8,13 @@ import org.scalajs.dom.*
   val container = document.getElementById("content")
 
   val button = document.createElement("button")
-  button.innerText = "Click me!"
+  button.innerText = "Click!"
   container.appendChild(button)
 
-  val count = container.appendChild(document.createElement("p"))
+  val count = container.appendChild(document.createElement("h2"))
   container.appendChild(count)
 
-  var counter = 0
+  var counter = 250
   def setCounter() =
     counter += 1
     count.innerText = counter.toString()

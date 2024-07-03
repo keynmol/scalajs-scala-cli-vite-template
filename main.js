@@ -1,1 +1,0 @@
-import  './scalajs-frontend.js'
