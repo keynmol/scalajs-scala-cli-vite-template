@@ -3,9 +3,7 @@
 Minimal template to get you started with Scala.js, Scala CLI and Vite.
 
 1. Run `npm install`
-2. In two separate terminals:
-   - `npm run watchScalajs` - for continuously rebuilding Scala.js bundle
-   - `npm run dev` - for running Vite's live server 
+2. `npm run dev` - this will run both the Vite's dev server _and_ Scala.js continuous packaging, watching for any file changes
 3. Happy hacking! Your project will reload automatically as you make changes to [index.scala](./index.scala)
 
 ## Demo
