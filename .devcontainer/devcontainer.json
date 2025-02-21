@@ -11,7 +11,8 @@
     "initializeCommand": {
         "create-volume": "docker volume create exclude-volume"
     },
-    "postStartCommand": "npm install && npm run devContainer",
+    "postStartCommand": "npm install",
+    "postAttachCommand": "nohup bash -c 'npm run devContainer &'",
     "customizations": {
         "vscode": {
             "extensions": [
