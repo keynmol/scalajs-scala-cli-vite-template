@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently npm:watchScalajs vite",
+    "devContainer": "concurrently npm:watchScalajs npm:viteWithHost",
+    "viteWithHost": "vite --host 0.0.0.0",
     "build": "npm run buildScalajsRelease && vite build",
     "preview": "vite preview",
     "watchScalajs": "scala-cli --power package . -w -f -o scalajs-frontend.js --js-module-kind es",

@@ -1,0 +1,7 @@
+{
+    "name": "My Linux Universal",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    }
+}
