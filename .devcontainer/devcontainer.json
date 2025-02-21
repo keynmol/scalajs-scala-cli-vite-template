@@ -6,7 +6,10 @@
     },
     "mounts": [
         //"source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
-        "source=exclude-volume,target=/workspaces/${localWorkspaceFolderBasename}/.scala-build,type=volume"
+        "source=exclude-volume,target=/workspaces/${localWorkspaceFolderBasename}/.scala-build,type=volume",
+        "source=exclude-volume,target=/workspaces/${localWorkspaceFolderBasename}/.bloop,type=volume",
+        "source=exclude-volume,target=/workspaces/${localWorkspaceFolderBasename}/.metals,type=volume",
+        "source=exclude-volume,target=/workspaces/${localWorkspaceFolderBasename}/.bsp,type=volume"
     ],
     "initializeCommand": {
         "create-volume": "docker volume create exclude-volume"

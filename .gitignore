@@ -26,5 +26,6 @@ dist-ssr
 .class
 .scala-build
 .metals
+.bloop
 .bsp
 scalajs-frontend.js
