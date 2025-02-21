@@ -1,7 +1,15 @@
 {
-    "name": "My Linux Universal",
+    "name": "Scala.js with Scala CLI and Vite",
     "build": {
         "dockerfile": "Dockerfile",
         "context": ".."
-    }
+    },
+    "mounts": [
+        //"source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
+        "source=exclude-volume,target=/workspaces/${localWorkspaceFolderBasename}/.scala-build,type=volume"
+    ],
+    "initializeCommand": {
+        "create-volume": "docker volume create exclude-volume"
+    },
+    "postStartCommand": "npm run devContainer"
 }
