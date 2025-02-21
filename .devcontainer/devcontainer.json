@@ -11,5 +11,5 @@
     "initializeCommand": {
         "create-volume": "docker volume create exclude-volume"
     },
-    "postStartCommand": "npm run devContainer"
+    "postStartCommand": "npm install && npm run devContainer"
 }
