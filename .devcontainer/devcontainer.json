@@ -7,8 +7,10 @@
     "initializeCommand": {
         "create-volume": "docker volume create exclude-volume"
     },
-    "postStartCommand": "npm install && rm -rf .scala-build .bsp .bloop && scala-cli setup-ide .",
-    "postAttachCommand": "nohup bash -c 'npm run devContainer &'",
+    "postStartCommand": {
+        "setupIDE": "npm install && rm -rf .scala-build .bsp .bloop && scala-cli setup-ide .",
+        "devServer": "nohup bash -c 'npm run devContainer &'"
+    },
     "customizations": {
         "vscode": {
             "extensions": [
